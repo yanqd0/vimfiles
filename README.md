@@ -1,6 +1,6 @@
 # vimfiles
 
-![progress](http://progressed.io/bar/0?title=developing)
+![Release](https://img.shields.io/github/release/yanqd0/vimfiles.svg)
 
 ## Description
 
@@ -20,8 +20,11 @@ And inspired by:
 - [spf13/spf13-vim](https://github.com/spf13/spf13-vim)
 - [liangxianzhe/oh-my-vim](https://github.com/liangxianzhe/oh-my-vim)
 - [vim-dist/webvim](https://github.com/vim-dist/webvim)
+- [skwp/dotfiles](https://github.com/skwp/dotfiles)
 
 ## License
+
+![License](https://img.shields.io/github/license/yanqd0/vimfiles.svg)
 
 [![Unlicense](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png)](https://commons.wikimedia.org/wiki/File:PD-icon.svg)
 
