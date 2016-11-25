@@ -3,6 +3,13 @@
 set nocompatible                    " Be iMproved, not Vi compatible
 let mapleader=","                   " Use ',' instead of default '\'
 
+" Before {{{
+if filereadable(expand("~/.vim/before.vimrc"))
+    source ~/.vim/before.vimrc
+endif
+
+" }}}
+
 " Plugins {{{
 if isdirectory(expand("~/.vim/bundle/Vundle.vim"))
     if filereadable(expand("~/.vim/plugins.vimrc"))
