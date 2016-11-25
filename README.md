@@ -8,6 +8,15 @@ This project holds my personal vim config files.
 
 *It's not recommended to use it directly.*
 
+## Usage
+
+```sh
+git clone https://github.com/yanqd0/vimfiles.git
+ln -s $PWD/vimfiles ~/.vim
+cd vimfiles
+git submodule update --init --recursive
+```
+
 ## Relation
 
 This repository is related to:
