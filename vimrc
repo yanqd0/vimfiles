@@ -312,9 +312,9 @@ noremap <leader>th :TOhtml<CR>
 
 " }}}
 
-" laboratory {{{
-if filereadable(expand("~/.vim/laboratory.vimrc"))
-    source ~/.vim/laboratory.vimrc
+" After {{{
+if filereadable(expand("~/.vim/after.vimrc"))
+    source ~/.vim/after.vimrc
 endif
 " }}}
 
