@@ -91,6 +91,7 @@ endif
 " Input {{{
 
 " <Tab> {{{
+set shiftround                      " Round indent to multiple of 'shiftwidth'.
 set shiftwidth=4                    " Number of spaces for (auto)indent
 set tabstop=4                       " Number of spaces that a <Tab> counts for
 set softtabstop=-1                  " Delete 'tabstop' number of spaces when typing <BS>
@@ -175,10 +176,10 @@ set backupext=.bak                  " A string appended to backup file names
 " set patchmode=.org                  " A string appended to patch file names, don't use
 
 set swapfile                        " Use a swapfile for the buffer
-if !isdirectory(expand("~/.vim/.swp"))
-    call mkdir($HOME . "/.vim/.swp", "p")
+if !isdirectory(expand("~/.vim/.tmp"))
+    call mkdir($HOME . "/.vim/.tmp", "p")
 endif                               " Make sure the 'directory' exists
-set directory=~/.vim/.swp//
+set directory=~/.vim/.tmp
 
 set autoread                        " Auto load when changes outside vim detected
 " set autowrite                       " Auto write when changing the buffer, too dangerous!
@@ -297,7 +298,7 @@ nnoremap <leader>cd :lcd %:p:h<CR>
 " Reload vimrc
 nnoremap <leader>rc :source $MYVIMRC<CR>
 " Open vimrc
-nnoremap <leader>oc :edit $MYVIMRC<CR>
+nnoremap <leader>oc :vsplit $MYVIMRC<CR>
 " Transform current file or selection to HTML
 noremap <leader>th :TOhtml<CR>
 " }}}
