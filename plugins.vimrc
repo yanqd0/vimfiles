@@ -7,15 +7,16 @@ Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
 
 " Syntax color {{{
 
-Plugin 'altercation/solarized', {'rtp': 'vim-colors-solarized'}
-let g:solarized_menu=0
+" Plugin 'altercation/solarized', {'rtp': 'vim-colors-solarized'}
+" let g:solarized_menu=0
 
 Plugin 'tomasr/molokai'
 let g:molokai_original = 0
 let g:rehash256 = 0
 
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim'}
-Plugin 'lsdr/monokai'
+" Plugin 'zenorocha/dracula-theme', {'rtp': 'vim'}
+" Plugin 'lsdr/monokai'
+Plugin 'sickill/vim-monokai'
 
 " indent {{{
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -239,7 +240,7 @@ augroup markdown
 augroup END
 
 Plugin 'MikeCoder/markdown-preview.vim'
-noremap <leader>m :MarkdownPreviewWithCustomCodeStyleCodeStyle GitHub monokai_sublime<CR>
+noremap <leader>m :MarkdownPreviewWithCustomCodeStyleCodeStyle github monokai_sublime<CR>
 
 " }}}
 
