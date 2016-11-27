@@ -328,6 +328,5 @@ if filereadable(expand('./.vimrc.local'))
 endif
 " }}}
 
-" vim: set shiftwidth=4 softtabstop=-1 expandtab:
-" foldmethod=marker
+" vim: set shiftwidth=4 softtabstop=-1 expandtab foldmethod=marker:
 " vim: set textwidth=100 colorcolumn=100:
