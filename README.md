@@ -15,6 +15,14 @@ git clone https://github.com/yanqd0/vimfiles.git
 ln -s $PWD/vimfiles ~/.vim
 cd vimfiles
 git submodule update --init --recursive
+vim -c PluginInstall
+```
+
+[Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) needs to be compiled isolately
+
+```sh
+cd bundle/YouCompleteMe/
+./install.py --all
 ```
 
 ## Relation
