@@ -251,6 +251,13 @@ if has("autocmd")
     autocmd filetype vim imap <F5> <ESC>:w!<CR>:source %<CR>a
     " }}}
 
+    " Groovy {{{
+    autocmd filetype groovy set textwidth=100
+    autocmd filetype groovy set colorcolumn=100
+    autocmd filetype groovy map <F5> :w!<CR>:execute "!groovyc % && groovy %:t:r"<CR>
+    autocmd filetype groovy imap <F5> <ESC>:w!<CR>:execute "!groovyc % && groovy %:t:r"<CR>a
+    " }}}
+
     " Instead of reverting the cursor to the last position in the buffer, we
     " set it to the first line when editing a git commit message
     autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
