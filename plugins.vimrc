@@ -164,7 +164,7 @@ noremap <silent> <F6> :NERDTreeToggle<CR>
 noremap <C-F6> :NERDTreeFind<CR>
 " let loaded_nerd_tree=1              " Open NERD tree when start-up
 let NERDTreeChDirMode=2             " Set the root of NERD tree as current directory
-let NERDTreeQuitOnOpen=1            " Closes the tree window after opening a file
+" let NERDTreeQuitOnOpen=1            " Closes the tree window after opening a file
 let NERDTreeShowBookmarks=1         " The bookmarks table will be displayed
 let NERDTreeWinPos=0                " Show the window at the left (1 means right)
 let NERDTreeWinSize=32              " Window size when the NERD tree is opened

@@ -70,7 +70,7 @@ endif
 set showmatch                       " Briefly jump to the matching one, when typing right bracket
 
 if has("mouse")
-    " set mouse=a                     " Enable the use of the mouse in all mode
+    set mouse=a                     " Enable the use of the mouse in all mode
     set mousehide                   " Mouse hidden when characters are typed
 endif
 " }}}
