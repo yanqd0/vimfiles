@@ -240,7 +240,7 @@ augroup markdown
 augroup END
 
 Plugin 'MikeCoder/markdown-preview.vim'
-noremap <leader>m :MarkdownPreviewWithCustomCodeStyleCodeStyle github monokai_sublime<CR>
+noremap <leader>m :MarkdownPreviewWithCustomCodeStyleCodeStyle GitHub monokai_sublime<CR>
 
 " }}}
 
