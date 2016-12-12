@@ -213,7 +213,13 @@ set nofileignorecase                " File name case sensitive
 set noautochdir                     " Don't auto change current directory
 " }}}
 
-" TODO: set spell
+" spell {{{
+if has('syntax')
+    set spell
+    set spelllang=en
+    set spelllang+=cjk
+endif
+" }}}
 
 " autocmd {{{
 if has("autocmd")
