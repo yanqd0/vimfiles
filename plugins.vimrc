@@ -306,5 +306,5 @@ call vundle#end()
 filetype plugin indent on           " Vundle required!
 
 " vim: set shiftwidth=4 softtabstop=-1 expandtab:
-" foldmethod=marker
+" vim: foldenable foldmethod=marker foldmarker={{{,}}} foldminlines=2:
 " vim: set textwidth=100 colorcolumn=100:
