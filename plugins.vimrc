@@ -200,6 +200,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_java_checkers=['javac']
 let g:syntastic_java_javac_config_file_enabled = 1
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 " `pip install --user flake8 pylint` for Python
 " `brew install tidy-html5` for HTML5
 " }}}
@@ -321,5 +323,5 @@ call vundle#end()
 filetype plugin indent on           " Vundle required!
 
 " vim: set shiftwidth=4 softtabstop=-1 expandtab:
-" foldmethod=marker
+" vim: foldenable foldmethod=marker foldmarker={{{,}}} foldminlines=2:
 " vim: set textwidth=100 colorcolumn=100:
