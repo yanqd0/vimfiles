@@ -2,8 +2,8 @@
 
 match WarningMsg /\k*\%#\k*/        " highlight current cursor word
 
-highlight MyBlank ctermbg=red ctermfg=black guibg=red guifg=black
-match MyBlank /\t\|\r\|\s\s*\n/
+" highlight MyBlank ctermbg=red ctermfg=black guibg=red guifg=black
+" match MyBlank /\t\|\r\|\s\s*\n/
 
 noremap <leader>ff :call FormatFile()<CR>
 function! FormatFile()
