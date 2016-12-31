@@ -22,11 +22,11 @@ endif
 syntax on                           " Open the syntax highlight
 set background=dark                 " Dark the screen
 set t_Co=256                        " To support many colorscheme
-if isdirectory(expand("~/.vim/bundle/vim-monokai"))
+try
     colorscheme molokai
-else
+catch
     colorscheme desert
-endif
+endtry
 
 " vim-indent-guides
 if !has('gui')
