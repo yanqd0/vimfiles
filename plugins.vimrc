@@ -289,6 +289,7 @@ Plugin 'junegunn/goyo.vim'
 " Plugin 'pythoncomplete'             " Deprecated by YouCompleteMe
 " Plugin 'nvie/vim-flake8'            " Not necessary if syntastic is on.
 Plugin 'tell-k/vim-autopep8'
+Plugin 'yanqd0/vim-cute-python'
 
 " }}}
 
