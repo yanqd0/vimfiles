@@ -11,14 +11,18 @@ endif
 " }}}
 
 " Plugins {{{
-if isdirectory(expand("~/.vim/bundle/Vundle.vim"))
+if isdirectory(expand("~/.vim/bundle/Vundle.vim/autoload"))
     if filereadable(expand("~/.vim/plugins.vimrc"))
         source ~/.vim/plugins.vimrc
     endif
+else
+    echom "Please install Vundle.vim with git."
+    echom "git submodule update --init"
 endif
 " }}}
 
 " colors {{{
+filetype plugin indent on           " Plugins required!
 syntax on                           " Open the syntax highlight
 set background=dark                 " Dark the screen
 set t_Co=256                        " To support many colorscheme
