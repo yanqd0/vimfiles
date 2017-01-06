@@ -1,6 +1,6 @@
 """ This should be executed before vimrc
 
-match WarningMsg /\k*\%#\k*/        " highlight current cursor word
+" match WarningMsg /\k*\%#\k*/        " highlight current cursor word
 
 " highlight MyBlank ctermbg=red ctermfg=black guibg=red guifg=black
 " match MyBlank /\t\|\r\|\s\s*\n/
