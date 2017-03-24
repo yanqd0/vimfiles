@@ -208,10 +208,10 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 " status line {{{
 
-" Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
 " let g:Powerline_symbols="unicode"
 
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
 
 " }}}
 
