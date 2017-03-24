@@ -7,12 +7,16 @@ if OSX()
 endif
 
 try
-    set guifont=Source\ Code\ Pro\ For\ Powerline\ 13
+    if OSX()
+        set guifont=Source\ Code\ Pro\ For\ Powerline:h13
+    elseif LINUX()
+        set guifont=Source\ Code\ Pro\ For\ Powerline\ 13
+    endif
 catch
     if OSX()
         set guifont=Monaco:h14
     elseif LINUX()
-        set guifont=Source\ Code\ Pro\ For\ Powerline\ 13
+        set guifont=Monospace\ 12
     endif
 endtry
 
@@ -23,5 +27,3 @@ if &guioptions =~#'T'
     set guioptions-=T
     set guioptions-=m
 endif
-
-
