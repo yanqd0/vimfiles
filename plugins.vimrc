@@ -293,6 +293,15 @@ Plugin 'yanqd0/vim-cute-python'
 
 " }}}
 
+" rst {{{
+
+Plugin 'Rykka/riv.vim'
+Plugin 'Rykka/InstantRst'
+" pip install git+https://github.com/Rykka/instant-rst.py.git
+" pip3 install hovercraft
+
+" }}}
+
 " Golang {{{
 
 Plugin 'fatih/vim-go'
