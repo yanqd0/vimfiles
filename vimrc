@@ -86,6 +86,7 @@ if has("windows")
     set splitright                  " Put new splitting windows to the right
     set splitbelow                  " Put new splitting windows to the bottom
     set tabpagemax=50               " Maximum number of tab pages
+    set showtabline=2               " Show tab line always
 endif
 " }}}
 

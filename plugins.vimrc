@@ -191,9 +191,9 @@ let NERDTreeAutoDeleteBuffer=1      " Auto delete invalid buffers
 Plugin 'scrooloose/syntastic'
 noremap <silent> <F3> :SyntasticCheck<CR>
 noremap <silent> <F4> :SyntasticToggleMode<CR>
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
