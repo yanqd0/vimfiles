@@ -336,6 +336,13 @@ Plugin 'gorodinskiy/vim-coloresque'
 
 " }}}
 
+" TOML {{{
+" See: https://github.com/toml-lang/toml
+
+Plugin 'cespare/vim-toml'
+
+" }}}
+
 Plugin 'rizzatti/dash.vim'
 
 call vundle#end()
