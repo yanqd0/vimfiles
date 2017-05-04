@@ -204,6 +204,9 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 " `pip install --user flake8 pylint` for Python
 " `brew install tidy-html5` for HTML5
+" `pip install --user vim-vint` for Vim
+let g:syntastic_vim_checkers = ['vint']
+
 " }}}
 
 " status line {{{
