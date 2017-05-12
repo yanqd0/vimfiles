@@ -185,6 +185,12 @@ let NERDTreeRespectWildIgnore=1     " the 'wildignore' setting is respected
 let NERDTreeMouseMode=2             " Double click file and single click directory
 let NERDTreeAutoDeleteBuffer=1      " Auto delete invalid buffers
 
+Plugin 'mileszs/ack.vim'
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+" brew install ag
+
 " }}}
 
 " syntastic checking {{{
