@@ -1,23 +1,23 @@
 """ The main config file
 
 set nocompatible                    " Be iMproved, not Vi compatible
-let mapleader=","                   " Use ',' instead of default '\'
+let mapleader=','                   " Use ',' instead of default '\'
 
 " Before {{{
-if filereadable(expand("~/.vim/before.vimrc"))
+if filereadable(expand('~/.vim/before.vimrc'))
     source ~/.vim/before.vimrc
 endif
 
 " }}}
 
 " Plugins {{{
-if isdirectory(expand("~/.vim/bundle/Vundle.vim/autoload"))
-    if filereadable(expand("~/.vim/plugins.vimrc"))
+if isdirectory(expand('~/.vim/bundle/Vundle.vim/autoload'))
+    if filereadable(expand('~/.vim/plugins.vimrc'))
         source ~/.vim/plugins.vimrc
     endif
 else
-    echom "Please install Vundle.vim with git."
-    echom "git submodule update --init"
+    echom 'Please install Vundle.vim with git.'
+    echom 'git submodule update --init'
 endif
 " }}}
 
@@ -45,21 +45,21 @@ endif
 " sign {{{
 set number                          " Show line numbers
 " set relativenumber                  " Show relative line numbers of cursor
-if has("linebreak")
+if has('linebreak')
     set numberwidth=3               " Minimal number of columns to use for the line number
 endif
 " }}}
 
 " cmd & status line {{{
 set history=1000                    " The history number of ':' commands
-if has("cmdline_info")
+if has('cmdline_info')
     set showcmd                     " Show (partial) command in the last line of the screen
     set ruler                       " Show the line and column number of the cursor position
 endif
-if has("wildmenu")
+if has('wildmenu')
     set wildmenu
 endif
-if has("cmdline_compl")
+if has('cmdline_compl')
     set wildmode=list:longest,full
 endif
 set wildignorecase                  " Ignore case of file and directory names when completion
@@ -67,13 +67,13 @@ set laststatus=2                    " Always show status line
 " }}}
 
 " curor & mouse {{{
-if has("syntax")
+if has('syntax')
     set cursorline                  " Highlight the screen line of the cursor
     " set cursorcolumn                " Highlight the screen column of the cursor
 endif
 set showmatch                       " Briefly jump to the matching one, when typing right bracket
 
-if has("mouse")
+if has('mouse')
     " set mouse=a                     " Enable the use of the mouse in all mode
     set mousehide                   " Mouse hidden when characters are typed
 endif
@@ -82,7 +82,7 @@ endif
 " TODO: buffer
 
 " Window & Tab page {{{
-if has("windows")
+if has('windows')
     set splitright                  " Put new splitting windows to the right
     set splitbelow                  " Put new splitting windows to the bottom
     set tabpagemax=50               " Maximum number of tab pages
@@ -93,13 +93,13 @@ endif
 " }}}
 
 " Search {{{
-if has("extra_search")
+if has('extra_search')
     set hlsearch                    " Highlight search result
     set incsearch                   " Search when typing
 endif
 set ignorecase                      " The case of normal letters is ignored when searching
 set smartcase                       " Override the 'ignorecase' if contains upper case characters
-if has("reltime")
+if has('reltime')
     set redrawtime=500              " The time in milliseconds for redrawing the display
 endif
 " }}}
@@ -117,10 +117,10 @@ set smarttab                        " A <Tab> inserts blanks smartly
 
 " indent {{{
 set autoindent                      " Copy indent from current line when starting a new line
-if has("smartindent")
+if has('smartindent')
     set smartindent                 " Do smart autoindenting when starting a new line
 endif
-if has("cindent")
+if has('cindent')
     set cindent                     " Do smart autoindenting according to C rules
 endif
 set backspace=indent                " Allow backspacing over autoindent
@@ -135,7 +135,7 @@ set listchars=tab:>-,trail:$        " Show <Tab> as >---
 
 " wrap {{{
 set wrap                            " Wrap lines longer than window width
-if has("linebreak")
+if has('linebreak')
     set linebreak                   " Wrap long lines only on display
     set breakat-=@                  " Adjust line break characters
     set showbreak=>\                " Show wrap breaks as...
@@ -149,17 +149,17 @@ endif
 " }}}
 
 " clipboard {{{
-if has("clipboard")
+if has('clipboard')
     set clipboard=unnamed           " Use the clipboard register '*' for all yank, delete, change
 
-    if has("xterm_clipboard")
+    if has('xterm_clipboard')
         set clipboard+=unnamedplus  " Use the clipboard register '*' either
     endif
 endif
 " }}}
 
 " folding {{{
-if has("folding")                   " `zj`, `zk`, `[z`, `]z` will be convenient
+if has('folding')                   " `zj`, `zk`, `[z`, `]z` will be convenient
     set foldenable                  " Enalbe fold
     set foldcolumn=0                " Show at the left side of the Window by such width
     set foldnestmax=2               " The maximum of fold deep
@@ -167,8 +167,8 @@ if has("folding")                   " `zj`, `zk`, `[z`, `]z` will be convenient
     set foldopen=all                " Open fold when cursor in
     set foldclose=all               " Close fold when cursor out
 
-    if &foldmethod =~# "manual"     " Set 'fdm' if it's default
-        if has("syntax")
+    if &foldmethod =~# 'manual'     " Set 'fdm' if it's default
+        if has('syntax')
             set foldmethod=syntax
         else
             set foldmethod=indent
@@ -179,11 +179,11 @@ endif
 
 " backup & swap {{{
 set backup                          " Make a backup before overwriting a file
-if has("writebackup")
+if has('writebackup')
     set writebackup
 endif
-if !isdirectory(expand("~/.vim/.backup"))
-    call mkdir($HOME . "/.vim/.backup", "p")
+if !isdirectory(expand('~/.vim/.backup'))
+    call mkdir($HOME . '/.vim/.backup', 'p')
 endif                               " Make sure the 'backupdir' exists
 set backupdir=~/.vim/.backup/       " The directory for backup
 set backupskip+=.git/*              " A list of file patterns which no backup
@@ -192,8 +192,8 @@ set backupext=.bak                  " A string appended to backup file names
 " set patchmode=.org                  " A string appended to patch file names, don't use
 
 set swapfile                        " Use a swapfile for the buffer
-if !isdirectory(expand("~/.vim/.tmp"))
-    call mkdir($HOME . "/.vim/.tmp", "p")
+if !isdirectory(expand('~/.vim/.tmp'))
+    call mkdir($HOME . '/.vim/.tmp', 'p')
 endif                               " Make sure the 'directory' exists
 set directory=~/.vim/.tmp
 
@@ -204,7 +204,7 @@ set autoread                        " Auto load when changes outside vim detecte
 " other {{{
 " TODO: Sort options below.
 set formatoptions+=tcroqwbmBj       " see :h fo-table
-if has("multi_byte")
+if has('multi_byte')
     set fileencodings=ucs-bom,utf-8
     set fileencodings+=EUC-CN,cp936,GBK,GB2312,GB18030
     set fileencodings+=big5,EUC-TW,cp950
@@ -227,10 +227,10 @@ endif
 " }}}
 
 " autocmd {{{
-if has("autocmd")
+if has('autocmd')
     " Restore the cursor line when reopen a file
     autocmd BufReadPost *
-                \ if line("'\"") > 1 && line("'\"") <= line("$")
+                \ if line("'\"") > 1 && line("'\"") <= line('$')
                 \ | exe "normal! g'\""
                 \ | endif
 
@@ -278,7 +278,7 @@ endif
 " Maps {{{
 
 " Windows {{{
-if has("windows")
+if has('windows')
     map <C-j> <C-W>j
     map <C-k> <C-W>k
     map <C-h> <C-W>h
@@ -294,7 +294,7 @@ map <leader>tm :tabmove
 " }}}
 
 " cscope {{{
-if has("cscope")
+if has('cscope')
     set cscopequickfix=s-,c-,d-,i-,t-,e-,f-
     " Add or kill cscope tags connection
     nnoremap <leader>sa :cs add ~/.vim/.tags/cscope.out<CR>
@@ -335,7 +335,7 @@ noremap <leader>th :TOhtml<CR>
 " }}}
 
 " After {{{
-if filereadable(expand("~/.vim/after.vimrc"))
+if filereadable(expand('~/.vim/after.vimrc'))
     source ~/.vim/after.vimrc
 endif
 " }}}

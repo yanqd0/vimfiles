@@ -94,9 +94,9 @@ Plugin 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 1       " <CR> complete a line
 let delimitMate_expand_space = 1    " <Space> complete another space behind
 let delimitMate_jump_expansion = 1  " Jump can cross lines
-let delimitMate_excluded_ft = "mail,txt"
+let delimitMate_excluded_ft = 'mail,txt'
 autocmd FileType vim,html,xml
-            \ let b:delimitMate_matchpairs = "(:),[:],{:},<:>"
+            \ let b:delimitMate_matchpairs = '(:),[:],{:},<:>'
 
 Plugin 'tpope/vim-surround'
 
@@ -108,8 +108,8 @@ Plugin 'SirVer/ultisnips'
 noremap <leader>us :UltiSnipsEdit<CR>
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsNoPythonWarning = 1
-let g:UltiSnipsSnippetsDir = $HOME."/.vim/.Snippets"
-let g:UltiSnipsSnippetDirectories = [".Snippets", "UltiSnips"]
+let g:UltiSnipsSnippetsDir = $HOME.'/.vim/.Snippets'
+let g:UltiSnipsSnippetDirectories = ['.Snippets', 'UltiSnips']
 " Local snippets directory is `.Snippets`
 " Remote snippets directory is `UltiSnips`, provided by snippets-for-vim
 
