@@ -31,13 +31,6 @@ try
 catch
     colorscheme desert
 endtry
-
-" vim-indent-guides
-if !has('gui')
-    let g:indent_guides_auto_colors = 0
-    highlight IndentGuidesOdd  ctermbg=grey
-    highlight IndentGuidesEven ctermbg=darkgrey
-endif
 " }}}
 
 " View {{{

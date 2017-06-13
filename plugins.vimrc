@@ -19,12 +19,16 @@ let g:rehash256 = 0
 Plugin 'sickill/vim-monokai'
 
 " indent {{{
-Plugin 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-let g:indent_guides_indent_levels = 10
-let g:indent_guides_auto_colors = 1
+
+" Plugin 'nathanaelkane/vim-indent-guides'
+" let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_start_level = 2
+" let g:indent_guides_guide_size = 1
+" let g:indent_guides_indent_levels = 10
+" let g:indent_guides_auto_colors = 1
+
+Plugin 'Yggdroot/indentLine'
+
 " }}}
 
 " }}}
