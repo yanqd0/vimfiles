@@ -258,22 +258,6 @@ Plugin 'tpope/vim-fugitive'
 
 " Markdown {{{
 
-" syntax {{{
-
-Plugin 'plasticboy/vim-markdown'
-let g:vim_markdown_folding_disabled=1
-
-Plugin 'jtratner/vim-flavored-markdown'
-augroup markdown
-    autocmd!
-    autocmd BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
-
-Plugin 'MikeCoder/markdown-preview.vim'
-noremap <leader>m :MarkdownPreviewWithCustomCodeStyleCodeStyle GitHub monokai_sublime<CR>
-
-" }}}
-
 " tabularize {{{
 Plugin 'godlygeek/tabular'
 
@@ -290,6 +274,20 @@ function! s:table_auto_align()
         call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
     endif
 endfunction
+" }}}
+
+" syntax {{{
+
+Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_conceal = 0
+let g:tex_conceal = ''
+let g:vim_markdown_math = 1
+let g:vim_markdown_toml_frontmatter = 1
+
+Plugin 'MikeCoder/markdown-preview.vim'
+noremap <leader>m :MarkdownPreviewWithCustomCodeStyleCodeStyle GitHub monokai_sublime<CR>
+
 " }}}
 
 Plugin 'junegunn/goyo.vim'
