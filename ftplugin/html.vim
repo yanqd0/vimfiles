@@ -3,9 +3,9 @@
 set colorcolumn=120
 set textwidth=119
 
-set noexpandtab
-set shiftwidth=2
-set tabstop=2
+set expandtab
+set shiftwidth=4
+set tabstop=4
 set softtabstop=-1
 
 set foldenable
