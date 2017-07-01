@@ -291,6 +291,7 @@ noremap <leader>m :MarkdownPreviewWithCustomCodeStyleCodeStyle GitHub monokai_su
 " }}}
 
 Plugin 'junegunn/goyo.vim'
+let g:goyo_width = 100
 
 " }}}
 
