@@ -27,8 +27,9 @@ Plugin 'sickill/vim-monokai'
 " let g:indent_guides_indent_levels = 10
 " let g:indent_guides_auto_colors = 1
 
-Plugin 'Yggdroot/indentLine'
-let g:indentLine_setConceal = 0
+" Disable indent for vim-cute-python
+" Plugin 'Yggdroot/indentLine'
+" let g:indentLine_setConceal = 0
 
 " }}}
 
