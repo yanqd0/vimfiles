@@ -310,9 +310,12 @@ let g:goyo_width = 100
 " Plugin 'klen/python-mode'           " Deprecated by YouCompleteMe
 " Plugin 'pythoncomplete'             " Deprecated by YouCompleteMe
 " Plugin 'nvie/vim-flake8'            " Not necessary if syntastic is on.
-Plugin 'tell-k/vim-autopep8'
-Plugin 'yanqd0/vim-cute-python'
+" Plugin 'yanqd0/vim-cute-python'
 
+Plugin 'Chiel92/vim-autoformat'
+let g:formatter_yapf_style = 'facebook'
+Plugin 'fisadev/vim-isort'
+noremap <F2> :Autoformat<CR>:Isort<CR>
 " }}}
 
 " rst {{{
