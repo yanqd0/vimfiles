@@ -200,25 +200,33 @@ endif
 " }}}
 
 " syntastic checking {{{
-Plugin 'scrooloose/syntastic'
-noremap <silent> <F3> :SyntasticCheck<CR>
-noremap <silent> <F4> :SyntasticToggleMode<CR>
+" Plugin 'scrooloose/syntastic'
+" noremap <silent> <F3> :SyntasticCheck<CR>
+" noremap <silent> <F4> :SyntasticToggleMode<CR>
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_java_checkers=['javac']
-let g:syntastic_java_javac_config_file_enabled = 1
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_java_checkers=['javac']
+" let g:syntastic_java_javac_config_file_enabled = 1
+" let g:syntastic_cpp_compiler = 'clang++'
+" let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 " `pip install --user flake8 pylint` for Python
 " `brew install tidy-html5` for HTML5
 " `pip install --user vim-vint` for Vim
-let g:syntastic_vim_checkers = ['vint']
+" let g:syntastic_vim_checkers = ['vint']
 
+Plugin 'w0rp/ale'
+let g:ale_enabled = 1
+" let g:ale_cursor_detail = 1
+let g:ale_echo_msg_format = '%linter% %severity% %code: %%s'
+let g:ale_linters = {
+            \ 'python': ['flake8', 'isort', 'yapf', 'pylint']
+            \ }
+let g:ale_python_pylint_options = '--rcfile pylint.rc'
 " }}}
 
 " status line {{{
