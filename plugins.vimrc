@@ -332,6 +332,7 @@ Plugin 'Rykka/InstantRst'
 " Golang {{{
 
 Plugin 'fatih/vim-go'
+let g:go_version_warning = 0
 Plugin 'nsf/gocode'
 
 " }}}
