@@ -226,7 +226,9 @@ let g:ale_echo_msg_format = '%linter% %severity% %code: %%s'
 let g:ale_linters = {
             \ 'python': ['flake8', 'isort', 'yapf', 'pylint']
             \ }
-let g:ale_python_pylint_options = '--rcfile pylint.rc'
+let g:ale_use_global_executables = 0
+noremap ]a :ALENext<CR>
+noremap [a :ALEPrevious<CR>
 " }}}
 
 " status line {{{
