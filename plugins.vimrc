@@ -226,9 +226,13 @@ let g:ale_echo_msg_format = '%linter% %severity% %code: %%s'
 let g:ale_linters = {
             \ 'python': ['flake8', 'isort', 'yapf', 'pylint']
             \ }
+let g:ale_fixers = {
+            \ 'python': ['isort', 'yapf'],
+            \ }
 let g:ale_use_global_executables = 0
 noremap ]a :ALENext<CR>
 noremap [a :ALEPrevious<CR>
+noremap <F2> :ALEFix<CR>
 " }}}
 
 " status line {{{
@@ -314,10 +318,10 @@ let g:goyo_width = 100
 " Plugin 'nvie/vim-flake8'            " Not necessary if syntastic is on.
 " Plugin 'yanqd0/vim-cute-python'
 
-Plugin 'Chiel92/vim-autoformat'
-let g:formatter_yapf_style = 'facebook'
-Plugin 'fisadev/vim-isort'
-noremap <F2> :Autoformat<CR>:Isort<CR>
+" Plugin 'Chiel92/vim-autoformat'
+" let g:formatter_yapf_style = 'facebook'
+" Plugin 'fisadev/vim-isort'
+" noremap <F2> :Autoformat<CR>:Isort<CR>
 " }}}
 
 " rst {{{
