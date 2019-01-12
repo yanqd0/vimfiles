@@ -5,14 +5,19 @@
 
 ## Description
 
-This project holds my personal vim configurations.
+This repository holds my personal vim configurations.
 
 *It's not recommended to use it directly yet.*
 
 ## Usage
 
+This repository becomes unstable recently.
+Many vim8 plugins will be installed to replace old ones at `master`.
+
+Use the tag `0.2.1` instead, if there is someone want to use.
+
 ```sh
-git clone --recursive https://github.com/yanqd0/vimfiles.git ~/.vim
+git clone --recursive https://github.com/yanqd0/vimfiles.git -b 0.2.1 ~/.vim
 vim -c PluginInstall
 ```
 
