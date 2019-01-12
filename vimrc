@@ -11,13 +11,8 @@ endif
 " }}}
 
 " Plugins {{{
-if isdirectory(expand('~/.vim/bundle/Vundle.vim/autoload'))
-    if filereadable(expand('~/.vim/plugins.vimrc'))
-        source ~/.vim/plugins.vimrc
-    endif
-else
-    echom 'Please install Vundle.vim with git.'
-    echom 'git submodule update --init'
+if filereadable(expand('~/.vim/plugins.vimrc'))
+    source ~/.vim/plugins.vimrc
 endif
 " }}}
 
