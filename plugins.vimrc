@@ -1,7 +1,7 @@
 """ The plugin config
 
 " Specify a directory for plugins
-call plug#begin('~/.vim/plugged')   " vim-plug required
+call plug#begin('~/.vim/vim-plug')   " vim-plug required
 
 " Syntax color {{{
 
