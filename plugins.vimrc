@@ -12,6 +12,8 @@ Plug 'tomasr/molokai'
 let g:molokai_original = 0
 let g:rehash256 = 0
 
+Plug 'sheerun/vim-polyglot'
+
 " Plug 'zenorocha/dracula-theme', {'rtp': 'vim'}
 " Plug 'lsdr/monokai'
 Plug 'sickill/vim-monokai'
