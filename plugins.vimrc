@@ -164,7 +164,7 @@ let g:ctrlp_mruf_max = 250
 let g:ctrlp_lazy_update = 0
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+            \ 'dir':  '\v[\/]\.(git|hg|svn|env|venv)$',
             \ 'file': '\v\.(exe|so|dll)$',
             \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
             \ }
@@ -177,6 +177,11 @@ let g:ctrlp_funky_use_cache = 1
 let g:ctrlp_funky_nolim = 1
 nnoremap <Leader>cp :CtrlPFunky<CR>
 nnoremap <Leader>cf :execute 'CtrlPFunky ' . expand('<cword>')<CR>
+
+" Replace CtrlP with FZF
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+let g:ctrlp_map = ''
+noremap <silent> <c-p> :FZF<CR>
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 noremap <silent> <F6> :NERDTreeToggle<CR>
