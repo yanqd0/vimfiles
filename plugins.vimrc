@@ -178,7 +178,7 @@ let g:ctrlp_funky_nolim = 1
 nnoremap <Leader>cp :CtrlPFunky<CR>
 nnoremap <Leader>cf :execute 'CtrlPFunky ' . expand('<cword>')<CR>
 
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 noremap <silent> <F6> :NERDTreeToggle<CR>
 noremap <C-F6> :NERDTreeFind<CR>
 " let loaded_nerd_tree=1              " Open NERD tree when start-up
@@ -190,6 +190,7 @@ let NERDTreeWinSize=32              " Window size when the NERD tree is opened
 let NERDTreeRespectWildIgnore=1     " the 'wildignore' setting is respected
 let NERDTreeMouseMode=2             " Double click file and single click directory
 let NERDTreeAutoDeleteBuffer=1      " Auto delete invalid buffers
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'mileszs/ack.vim'
 if executable('ag')
