@@ -235,8 +235,10 @@ let g:ale_enabled = 1
 " let g:ale_cursor_detail = 1
 let g:ale_completion_enabled = 1
 let g:ale_echo_msg_format = '%linter% %severity% %code: %%s'
+" pip install flake8 isort yapf pylint
+" yarn global add vue-language-server
 let g:ale_linters = {
-            \ 'python': ['flake8', 'isort', 'yapf', 'pylint']
+            \ 'python': ['flake8', 'isort', 'yapf', 'pylint'],
             \ }
 let g:ale_fixers = {
             \ 'python': ['isort', 'yapf'],
