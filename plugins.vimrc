@@ -101,10 +101,15 @@ let delimitMate_expand_cr = 1       " <CR> complete a line
 let delimitMate_expand_space = 1    " <Space> complete another space behind
 let delimitMate_jump_expansion = 1  " Jump can cross lines
 let delimitMate_excluded_ft = 'mail,txt'
-autocmd FileType vim,html,xml
-            \ let b:delimitMate_matchpairs = '(:),[:],{:},<:>'
+augroup vimrc
+    autocmd FileType vim,html,xml,vue,django let b:delimitMate_matchpairs = '(:),[:],{:}'
+augroup END
 
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+
+Plug 'alvan/vim-closetag'
+let g:closetag_filetypes = 'html,xhtml,phtml,vue,django'
 
 " }}}
 
