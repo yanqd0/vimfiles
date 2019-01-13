@@ -232,7 +232,6 @@ endif
 
 Plug 'w0rp/ale'
 let g:ale_enabled = 1
-" let g:ale_cursor_detail = 1
 let g:ale_completion_enabled = 1
 let g:ale_echo_msg_format = '%linter% %severity% %code: %%s'
 " pip install flake8 isort yapf pylint
@@ -244,6 +243,7 @@ let g:ale_fixers = {
             \ 'python': ['isort', 'yapf'],
             \ }
 let g:ale_use_global_executables = 0
+noremap <c-\> :ALEGoToDefinition<CR>
 noremap ]a :ALENext<CR>
 noremap [a :ALEPrevious<CR>
 noremap <F2> :ALEFix<CR>
