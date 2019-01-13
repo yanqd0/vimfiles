@@ -367,12 +367,6 @@ Plug 'chrisbra/csv.vim'
 
 " }}}
 
-" Nginx {{{
-
-Plug 'yanqd0/nginx.vim'
-
-" }}}
-
 " HTML {{{
 
 Plug 'gorodinskiy/vim-coloresque'
