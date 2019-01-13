@@ -375,6 +375,9 @@ Plug 'yanqd0/nginx.vim'
 
 Plug 'gorodinskiy/vim-coloresque'
 
+" https://emmet.io/
+Plug 'mattn/emmet-vim'
+
 " }}}
 
 " TOML {{{
