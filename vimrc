@@ -11,6 +11,7 @@ endif
 " }}}
 
 " Plugins {{{
+set shell=bash
 if filereadable(expand('~/.vim/plugins.vimrc'))
     source ~/.vim/plugins.vimrc
 endif
