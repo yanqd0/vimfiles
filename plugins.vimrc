@@ -242,6 +242,9 @@ let g:ale_linters = {
             \ }
 let g:ale_fixers = {
             \ 'python': ['yapf', 'isort'],
+            \ 'javascript': ['eslint'],
+            \ 'json': ['jq', 'fixjson'],
+            \ 'xml': ['xmllint'],
             \ }
 let g:ale_use_global_executables = 0
 noremap <c-\> :ALEGoToDefinition<CR>
