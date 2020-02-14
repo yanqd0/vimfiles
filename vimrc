@@ -89,7 +89,7 @@ endif
 set ignorecase                      " The case of normal letters is ignored when searching
 set smartcase                       " Override the 'ignorecase' if contains upper case characters
 if has('reltime')
-    set redrawtime=500              " The time in milliseconds for redrawing the display
+    set redrawtime=2000             " The time in milliseconds for redrawing the display
 endif
 " }}}
 
