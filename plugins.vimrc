@@ -12,6 +12,7 @@ Plug 'tomasr/molokai'
 let g:molokai_original = 0
 let g:rehash256 = 0
 
+" A solid language pack for Vim.
 Plug 'sheerun/vim-polyglot'
 
 " Plug 'zenorocha/dracula-theme', {'rtp': 'vim'}
@@ -247,6 +248,7 @@ let g:ale_fixers = {
             \ 'xml': ['xmllint'],
             \ }
 let g:ale_use_global_executables = 0
+let g:ale_markdown_mdl_executable = 'markdownlint'
 noremap <c-\> :ALEGoToDefinition<CR>
 noremap ]a :ALENext<CR>
 noremap [a :ALEPrevious<CR>
