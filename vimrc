@@ -171,20 +171,20 @@ set backup                          " Make a backup before overwriting a file
 if has('writebackup')
     set writebackup
 endif
-if !isdirectory(expand('~/.vim/.backup'))
-    call mkdir($HOME . '/.vim/.backup', 'p')
+if !isdirectory(expand('~/.vim.cache/.backup'))
+    call mkdir($HOME . '/.vim.cache/.backup', 'p')
 endif                               " Make sure the 'backupdir' exists
-set backupdir=~/.vim/.backup/       " The directory for backup
+set backupdir=~/.vim.cache/.backup/       " The directory for backup
 set backupskip+=.git/*              " A list of file patterns which no backup
 set backupcopy=auto                 " Auto choose copy or override
 set backupext=.bak                  " A string appended to backup file names
 " set patchmode=.org                  " A string appended to patch file names, don't use
 
 set swapfile                        " Use a swapfile for the buffer
-if !isdirectory(expand('~/.vim/.tmp'))
-    call mkdir($HOME . '/.vim/.tmp', 'p')
+if !isdirectory(expand('~/.vim.cache/.tmp'))
+    call mkdir($HOME . '/.vim.cache/.tmp', 'p')
 endif                               " Make sure the 'directory' exists
-set directory=~/.vim/.tmp
+set directory=~/.vim.cache/.tmp
 
 set autoread                        " Auto load when changes outside vim detected
 " set autowrite                       " Auto write when changing the buffer, too dangerous!
