@@ -246,6 +246,9 @@ let g:ale_fixers = {
             \ 'javascript': ['eslint'],
             \ 'json': ['jq', 'fixjson'],
             \ 'xml': ['xmllint'],
+            \ 'html': ['prettier'],
+            \ 'sql': ['pgformatter'],
+            \ 'dot': ['trim_whitespace'],
             \ }
 let g:ale_use_global_executables = 0
 let g:ale_markdown_mdl_executable = 'markdownlint'
