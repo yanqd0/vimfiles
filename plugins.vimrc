@@ -260,8 +260,17 @@ noremap <F2> :ALEFix<CR>
 
 " status line {{{
 
-Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
+" Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
 " let g:Powerline_symbols="unicode"
+
+python3 << endpython
+try:
+    from powerline.vim import setup as powerline_setup
+    powerline_setup()
+    del powerline_setup
+except ImportError:
+    pass
+endpython
 
 " Plug 'bling/vim-airline'
 
@@ -349,8 +358,8 @@ let g:goyo_width = 100
 
 " rst {{{
 
-Plug 'Rykka/riv.vim'
-Plug 'Rykka/InstantRst'
+" Plug 'Rykka/riv.vim'
+" Plug 'Rykka/InstantRst'
 " pip install git+https://github.com/Rykka/instant-rst.py.git
 " pip3 install hovercraft
 
