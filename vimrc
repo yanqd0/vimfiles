@@ -22,6 +22,7 @@ filetype plugin indent on           " Plugins required!
 syntax on                           " Open the syntax highlight
 set background=dark                 " Dark the screen
 set t_Co=256                        " To support many colorscheme
+set maxmempattern=4000
 try
     colorscheme molokai
 catch

@@ -239,7 +239,7 @@ let g:ale_echo_msg_format = '%linter% %severity% %code: %%s'
 " pip install flake8 isort yapf pylint vint yamllint ansible-lint
 " yarn global add alex vue-language-server eslint prettier tslint tsserver bash-language-server
 let g:ale_linters = {
-            \ 'python': ['flake8', 'yapf', 'isort', 'pylint'],
+            \ 'python': ['flake8', 'yapf', 'isort', 'pylint', 'mypy', 'pydocstyle'],
             \ }
 let g:ale_fixers = {
             \ 'python': ['yapf', 'isort'],
