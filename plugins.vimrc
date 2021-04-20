@@ -351,6 +351,9 @@ let g:goyo_width = 100
 
 " Python {{{
 
+Plug 'mgedmin/coverage-highlight.vim'
+noremap <F4> :ToggleCoverage<CR>
+
 " Plug 'klen/python-mode'           " Deprecated by YouCompleteMe
 " Plug 'pythoncomplete'             " Deprecated by YouCompleteMe
 " Plug 'nvie/vim-flake8'            " Not necessary if syntastic is on.
