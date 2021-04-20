@@ -260,8 +260,11 @@ noremap <F2> :ALEFix<CR>
 
 " status line {{{
 
-" Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
-" let g:Powerline_symbols="unicode"
+if has('nvim')
+    Plug 'bling/vim-airline'
+else
+    Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
+    " let g:Powerline_symbols="unicode"
 
 python3 << endpython
 try:
@@ -272,7 +275,7 @@ except ImportError:
     pass
 endpython
 
-" Plug 'bling/vim-airline'
+endif
 
 " }}}
 
