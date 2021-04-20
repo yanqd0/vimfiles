@@ -235,20 +235,23 @@ Plug 'w0rp/ale'
 let g:ale_enabled = 1
 let g:ale_completion_enabled = 1
 let g:ale_echo_msg_format = '%linter% %severity% %code: %%s'
-" brew install hadolint
+" brew install hadolint clang-format
 " pip install flake8 isort yapf pylint vint yamllint ansible-lint
 " yarn global add alex vue-language-server eslint prettier tslint tsserver bash-language-server
 let g:ale_linters = {
-            \ 'python': ['flake8', 'yapf', 'isort', 'pylint', 'mypy', 'pydocstyle'],
+            \ 'python': ['flake8', 'isort', 'yapf', 'pylint', 'pycodestyle', 'pydocstyle'],
             \ }
 let g:ale_fixers = {
-            \ 'python': ['yapf', 'isort'],
+            \ 'python': ['isort', 'yapf'],
             \ 'javascript': ['eslint'],
             \ 'json': ['jq', 'fixjson'],
             \ 'xml': ['xmllint'],
             \ 'html': ['prettier'],
             \ 'sql': ['pgformatter'],
             \ 'dot': ['trim_whitespace'],
+            \ 'cmake': ['cmake-format'],
+            \ 'css': ['prettier'],
+            \ 'cpp': ['clang-format'],
             \ }
 let g:ale_use_global_executables = 0
 let g:ale_markdown_mdl_executable = 'markdownlint'

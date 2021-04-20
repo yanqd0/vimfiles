@@ -2,6 +2,7 @@
 
 set nocompatible                    " Be iMproved, not Vi compatible
 let mapleader=','                   " Use ',' instead of default '\'
+set encoding=utf-8
 
 " Before {{{
 if filereadable(expand('~/.vim/before.vimrc'))
