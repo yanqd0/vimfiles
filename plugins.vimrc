@@ -242,16 +242,17 @@ let g:ale_linters = {
             \ 'python': ['flake8', 'isort', 'yapf', 'pylint', 'pycodestyle', 'pydocstyle'],
             \ }
 let g:ale_fixers = {
-            \ 'python': ['isort', 'yapf'],
+            \ 'cmake': ['cmake-format'],
+            \ 'cpp': ['clang-format'],
+            \ 'css': ['prettier'],
+            \ 'dot': ['trim_whitespace'],
+            \ 'html': ['prettier'],
             \ 'javascript': ['eslint'],
             \ 'json': ['jq', 'fixjson'],
-            \ 'xml': ['xmllint'],
-            \ 'html': ['prettier'],
+            \ 'proto': ['protolint'],
+            \ 'python': ['isort', 'yapf'],
             \ 'sql': ['pgformatter'],
-            \ 'dot': ['trim_whitespace'],
-            \ 'cmake': ['cmake-format'],
-            \ 'css': ['prettier'],
-            \ 'cpp': ['clang-format'],
+            \ 'xml': ['xmllint'],
             \ }
 let g:ale_use_global_executables = 0
 let g:ale_markdown_mdl_executable = 'markdownlint'
