@@ -242,7 +242,7 @@ let g:ale_linters = {
             \ 'python': ['flake8', 'isort', 'yapf', 'pylint', 'pycodestyle', 'pydocstyle'],
             \ }
 let g:ale_fixers = {
-            \ 'cmake': ['cmake-format'],
+            \ 'cmake': ['cmakeformat'],
             \ 'cpp': ['clang-format'],
             \ 'css': ['prettier'],
             \ 'dot': ['trim_whitespace'],
@@ -251,9 +251,12 @@ let g:ale_fixers = {
             \ 'json': ['jq', 'fixjson'],
             \ 'proto': ['protolint'],
             \ 'python': ['isort', 'yapf'],
+            \ 'rust': ['rustfmt'],
             \ 'sql': ['pgformatter'],
             \ 'xml': ['xmllint'],
+            \ 'yaml': ['yamlfix'],
             \ }
+let g:ale_cmake_cmakeformat_executable = 'cmake-format'
 let g:ale_use_global_executables = 0
 let g:ale_markdown_mdl_executable = 'markdownlint'
 noremap <c-\> :ALEGoToDefinition<CR>
